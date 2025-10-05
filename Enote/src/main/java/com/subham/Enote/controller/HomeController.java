@@ -8,7 +8,33 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HomeController {
 
     @GetMapping
-    public String get(){
+    public String get() {
         return "index";
     }
+
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+
+    @GetMapping("/add_notes")
+    public String addNotes() {
+        return "add_notes";
+    }
+
+    @GetMapping("/view_notes")
+    public String viewNotes() {
+        return "view_notes";
+    }
+
+    @GetMapping("/edit_notes")
+    public String editNotes() {
+        return "edit_notes";
+    }
+
 }
